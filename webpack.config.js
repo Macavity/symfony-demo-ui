@@ -9,15 +9,17 @@ Encore
     // the public path used by the web server to access the previous directory
     .setPublicPath('/build')
 
+    .enableSingleRuntimeChunk()
+
     // will create public/build/app.js and public/build/app.scss
     .addEntry('app', './assets/js/app.js')
 
-    .addPlugin(new GoogleFontsPlugin({
-        fonts: [
-            { family: "Open Sans", variants: ["400", "600"] }
-        ],
-        "path": "fonts/"
-    }))
+    // .addPlugin(new GoogleFontsPlugin({
+    //     fonts: [
+    //         { family: "Open Sans", variants: ["400", "600"] }
+    //     ],
+    //     "path": "fonts/"
+    // }))
 
     // allow legacy applications to use $/jQuery as a global variable
     .autoProvidejQuery()

@@ -1,0 +1,24 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": [
+                        ">2% in DE",
+                        "IE 11",
+                        "IE 10",
+                        "Edge 14",
+                        "Safari 10",
+                        "Firefox >=5"
+                    ]
+                },
+                "useBuiltIns": [
+                    "usage"
+                ]
+            }
+        ]
+    ],
+    "plugins": [
+    ]
+}

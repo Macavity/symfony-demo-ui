@@ -19,8 +19,8 @@ cd /vagrant/api
 composer install
 cd /vagrant/ui
 composer install
-yarn install
-yarn run encore production 
+yarn
+yarn build 
 ``` 
 
 now we have to setup the database! simply run composer
